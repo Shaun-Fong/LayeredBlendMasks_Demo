@@ -1,0 +1,939 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5695e92ec4c7aac4ea6ddb7f9f2cbaf6, type: 3}
+  m_Name: BlendProfile_Fullbody
+  m_EditorClassIdentifier: 
+  BlendInDuration: 0.25
+  BlendInCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  BlendOutDuration: 0.25
+  BlendOutCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Skeleton:
+    rid: 3286130790873170063
+  references:
+    version: 2
+    RefIds:
+    - rid: 3286130790873170063
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: Ch36_LayeredBlendMask
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170064
+        - rid: 3286130790873170065
+        depth: 0
+        isExpanded: 1
+    - rid: 3286130790873170064
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: Ch36
+        include: 0
+        blendLayerWeight:
+          values:
+          - 0
+        blendLayerWeightCheckbox: 00
+        children: []
+        depth: 1
+        isExpanded: 1
+    - rid: 3286130790873170065
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:Hips
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170066
+        - rid: 3286130790873170067
+        - rid: 3286130790873170068
+        depth: 1
+        isExpanded: 1
+    - rid: 3286130790873170066
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftUpLeg
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170069
+        depth: 2
+        isExpanded: 0
+    - rid: 3286130790873170067
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightUpLeg
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170070
+        depth: 2
+        isExpanded: 0
+    - rid: 3286130790873170068
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:Spine
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170071
+        depth: 2
+        isExpanded: 1
+    - rid: 3286130790873170069
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftLeg
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170072
+        depth: 3
+        isExpanded: 1
+    - rid: 3286130790873170070
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightLeg
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170073
+        depth: 3
+        isExpanded: 1
+    - rid: 3286130790873170071
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:Spine1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170074
+        depth: 3
+        isExpanded: 1
+    - rid: 3286130790873170072
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftFoot
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170075
+        depth: 4
+        isExpanded: 1
+    - rid: 3286130790873170073
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightFoot
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170076
+        depth: 4
+        isExpanded: 1
+    - rid: 3286130790873170074
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:Spine2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170077
+        - rid: 3286130790873170078
+        - rid: 3286130790873170079
+        depth: 4
+        isExpanded: 1
+    - rid: 3286130790873170075
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftToeBase
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170080
+        depth: 5
+        isExpanded: 1
+    - rid: 3286130790873170076
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightToeBase
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170081
+        depth: 5
+        isExpanded: 1
+    - rid: 3286130790873170077
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftShoulder
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170082
+        depth: 5
+        isExpanded: 1
+    - rid: 3286130790873170078
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:Neck
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170083
+        depth: 5
+        isExpanded: 1
+    - rid: 3286130790873170079
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightShoulder
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170084
+        depth: 5
+        isExpanded: 1
+    - rid: 3286130790873170080
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftToe_End
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 6
+        isExpanded: 1
+    - rid: 3286130790873170081
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightToe_End
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 6
+        isExpanded: 1
+    - rid: 3286130790873170082
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftArm
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170085
+        depth: 6
+        isExpanded: 1
+    - rid: 3286130790873170083
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:Head
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170086
+        depth: 6
+        isExpanded: 1
+    - rid: 3286130790873170084
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightArm
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170087
+        depth: 6
+        isExpanded: 1
+    - rid: 3286130790873170085
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftForeArm
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170088
+        depth: 7
+        isExpanded: 1
+    - rid: 3286130790873170086
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:HeadTop_End
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 7
+        isExpanded: 1
+    - rid: 3286130790873170087
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightForeArm
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170089
+        depth: 7
+        isExpanded: 1
+    - rid: 3286130790873170088
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHand
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170090
+        - rid: 3286130790873170091
+        - rid: 3286130790873170092
+        - rid: 3286130790873170093
+        - rid: 3286130790873170094
+        depth: 8
+        isExpanded: 1
+    - rid: 3286130790873170089
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHand
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170095
+        - rid: 3286130790873170096
+        - rid: 3286130790873170097
+        - rid: 3286130790873170098
+        - rid: 3286130790873170099
+        depth: 8
+        isExpanded: 1
+    - rid: 3286130790873170090
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandIndex1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170100
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170091
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandMiddle1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170101
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170092
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandPinky1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170102
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170093
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandRing1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170103
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170094
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandThumb1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170104
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170095
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandIndex1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170105
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170096
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandMiddle1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170106
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170097
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandPinky1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170107
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170098
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandRing1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170108
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170099
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandThumb1
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170109
+        depth: 9
+        isExpanded: 1
+    - rid: 3286130790873170100
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandIndex2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170110
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170101
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandMiddle2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170111
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170102
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandPinky2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170112
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170103
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandRing2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170113
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170104
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandThumb2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170114
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170105
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandIndex2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170115
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170106
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandMiddle2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170116
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170107
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandPinky2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170117
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170108
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandRing2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170118
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170109
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandThumb2
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170119
+        depth: 10
+        isExpanded: 1
+    - rid: 3286130790873170110
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandIndex3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170120
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170111
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandMiddle3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170121
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170112
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandPinky3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170122
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170113
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandRing3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170123
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170114
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandThumb3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170124
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170115
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandIndex3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170125
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170116
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandMiddle3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170126
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170117
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandPinky3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170127
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170118
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandRing3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170128
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170119
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandThumb3
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children:
+        - rid: 3286130790873170129
+        depth: 11
+        isExpanded: 1
+    - rid: 3286130790873170120
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandIndex4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170121
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandMiddle4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170122
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandPinky4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170123
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandRing4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170124
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:LeftHandThumb4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170125
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandIndex4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170126
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandMiddle4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170127
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandPinky4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170128
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandRing4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
+    - rid: 3286130790873170129
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        name: mixamorig1:RightHandThumb4
+        include: 1
+        blendLayerWeight:
+          values:
+          - 1
+        blendLayerWeightCheckbox: 01
+        children: []
+        depth: 12
+        isExpanded: 1
