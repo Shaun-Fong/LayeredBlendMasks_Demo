@@ -1,5 +1,8 @@
 # LayeredBlendMasks_Demo
 The demo about layered blend masks.
+
+Expired.
+Please check out demo in Package Manager.
  
 [Asset Store](https://u3d.as/3vzq)
  
