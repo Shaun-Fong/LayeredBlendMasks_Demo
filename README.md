@@ -9,4 +9,6 @@ Layered Blend Mask Version: v1.2.3+
  
 [Online Documentation](https://docs.google.com/document/d/1KG14fNuWq9wdGFv6JRcPDquo1Lj-f2KocEfUdyZqjfQ/edit?tab=t.0)
 
+[Online Demo](https://rengamesteam.github.io/LayeredBlendMaskDemo/)
+
 [Discord](https://discord.gg/dUVDKhzUQK)
