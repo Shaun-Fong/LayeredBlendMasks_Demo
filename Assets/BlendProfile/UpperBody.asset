@@ -1,0 +1,1161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff5f5643e4a648419828162067703e9, type: 3}
+  m_Name: UpperBody
+  m_EditorClassIdentifier: 
+  EnableTransition: 0
+  TransitionInDuration: 0.2
+  TransitionInEase:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  TransitionOutDuration: 0.2
+  TransitionOutEase:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Skeleton:
+    rid: 1977933986848309401
+  references:
+    version: 2
+    RefIds:
+    - rid: 1977933986848309401
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: AK
+        bonePath: 
+        enable: 1
+        depth: 0
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 0
+          toggles: 01
+        children:
+        - rid: 1977933986848309402
+        - rid: 1977933986848309403
+    - rid: 1977933986848309402
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: dummy
+        bonePath: dummy
+        enable: 0
+        depth: 1
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children: []
+    - rid: 1977933986848309403
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Skeleton
+        bonePath: Skeleton
+        enable: 0
+        depth: 1
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children:
+        - rid: 1977933986848309404
+    - rid: 1977933986848309404
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Hips
+        bonePath: Skeleton/Hips
+        enable: 1
+        depth: 2
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 0.12
+          toggles: 01
+        children:
+        - rid: 1977933986848309405
+        - rid: 1977933986848309406
+        - rid: 1977933986848309407
+    - rid: 1977933986848309405
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_UpperLeg
+        bonePath: Skeleton/Hips/Left_UpperLeg
+        enable: 0
+        depth: 3
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children:
+        - rid: 1977933986848309408
+        - rid: 1977933986848309409
+    - rid: 1977933986848309406
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_UpperLeg
+        bonePath: Skeleton/Hips/Right_UpperLeg
+        enable: 0
+        depth: 3
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children:
+        - rid: 1977933986848309410
+        - rid: 1977933986848309411
+    - rid: 1977933986848309407
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Spine
+        bonePath: Skeleton/Hips/Spine
+        enable: 1
+        depth: 3
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 0.21
+          toggles: 01
+        children:
+        - rid: 1977933986848309412
+    - rid: 1977933986848309408
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_LowerLeg
+        bonePath: Skeleton/Hips/Left_UpperLeg/Left_LowerLeg
+        enable: 0
+        depth: 4
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children:
+        - rid: 1977933986848309413
+        - rid: 1977933986848309414
+    - rid: 1977933986848309409
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: thigh_twist.l
+        bonePath: Skeleton/Hips/Left_UpperLeg/thigh_twist.l
+        enable: 0
+        depth: 4
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children: []
+    - rid: 1977933986848309410
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_LowerLeg
+        bonePath: Skeleton/Hips/Right_UpperLeg/Right_LowerLeg
+        enable: 0
+        depth: 4
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children:
+        - rid: 1977933986848309415
+        - rid: 1977933986848309416
+    - rid: 1977933986848309411
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: thigh_twist.r
+        bonePath: Skeleton/Hips/Right_UpperLeg/thigh_twist.r
+        enable: 0
+        depth: 4
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children: []
+    - rid: 1977933986848309412
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Chest
+        bonePath: Skeleton/Hips/Spine/Chest
+        enable: 1
+        depth: 4
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 0.53
+          toggles: 01
+        children:
+        - rid: 1977933986848309417
+    - rid: 1977933986848309413
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_Foot
+        bonePath: Skeleton/Hips/Left_UpperLeg/Left_LowerLeg/Left_Foot
+        enable: 0
+        depth: 5
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children:
+        - rid: 1977933986848309418
+    - rid: 1977933986848309414
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: leg_twist.l
+        bonePath: Skeleton/Hips/Left_UpperLeg/Left_LowerLeg/leg_twist.l
+        enable: 0
+        depth: 5
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children: []
+    - rid: 1977933986848309415
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: leg_twist.r
+        bonePath: Skeleton/Hips/Right_UpperLeg/Right_LowerLeg/leg_twist.r
+        enable: 0
+        depth: 5
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children: []
+    - rid: 1977933986848309416
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_Foot
+        bonePath: Skeleton/Hips/Right_UpperLeg/Right_LowerLeg/Right_Foot
+        enable: 0
+        depth: 5
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children:
+        - rid: 1977933986848309419
+    - rid: 1977933986848309417
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: UpperChest
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest
+        enable: 1
+        depth: 5
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 0.83
+          toggles: 01
+        children:
+        - rid: 1977933986848309420
+        - rid: 1977933986848309421
+        - rid: 1977933986848309422
+    - rid: 1977933986848309418
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_Toes
+        bonePath: Skeleton/Hips/Left_UpperLeg/Left_LowerLeg/Left_Foot/Left_Toes
+        enable: 0
+        depth: 6
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children: []
+    - rid: 1977933986848309419
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_Toes
+        bonePath: Skeleton/Hips/Right_UpperLeg/Right_LowerLeg/Right_Foot/Right_Toes
+        enable: 0
+        depth: 6
+        Weights:
+          SingleElementLock: 1
+          values: []
+          toggles: 
+        children: []
+    - rid: 1977933986848309420
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_Shoulder
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder
+        enable: 1
+        depth: 6
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309423
+    - rid: 1977933986848309421
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Neck
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Neck
+        enable: 1
+        depth: 6
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309424
+        - rid: 1977933986848309425
+    - rid: 1977933986848309422
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_Shoulder
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder
+        enable: 1
+        depth: 6
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309426
+    - rid: 1977933986848309423
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_UpperArm
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm
+        enable: 1
+        depth: 7
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309427
+        - rid: 1977933986848309428
+    - rid: 1977933986848309424
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Head
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Neck/Head
+        enable: 1
+        depth: 7
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309429
+        - rid: 1977933986848309430
+        - rid: 1977933986848309431
+    - rid: 1977933986848309425
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Neck_Twist_A
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Neck/Neck_Twist_A
+        enable: 1
+        depth: 7
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309426
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_UpperArm
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm
+        enable: 1
+        depth: 7
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309432
+        - rid: 1977933986848309433
+    - rid: 1977933986848309427
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: arm_twist.l
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/arm_twist.l
+        enable: 1
+        depth: 8
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309428
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_LowerArm
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        enable: 1
+        depth: 8
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309434
+        - rid: 1977933986848309435
+    - rid: 1977933986848309429
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Jaw
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Neck/Head/Jaw
+        enable: 1
+        depth: 8
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309430
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_Eye
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Neck/Head/Left_Eye
+        enable: 1
+        depth: 8
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309431
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_Eye
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Neck/Head/Right_Eye
+        enable: 1
+        depth: 8
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309432
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: arm_twist.r
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/arm_twist.r
+        enable: 1
+        depth: 8
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309433
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_LowerArm
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        enable: 1
+        depth: 8
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309436
+        - rid: 1977933986848309437
+    - rid: 1977933986848309434
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: forearm_twist.l
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/forearm_twist.l
+        enable: 1
+        depth: 9
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309435
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_Hand
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        enable: 1
+        depth: 9
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309438
+        - rid: 1977933986848309439
+        - rid: 1977933986848309440
+        - rid: 1977933986848309441
+        - rid: 1977933986848309442
+    - rid: 1977933986848309436
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: forearm_twist.r
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/forearm_twist.r
+        enable: 1
+        depth: 9
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309437
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_Hand
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        enable: 1
+        depth: 9
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309443
+        - rid: 1977933986848309444
+        - rid: 1977933986848309445
+        - rid: 1977933986848309446
+        - rid: 1977933986848309447
+        - rid: 1977933986848309448
+    - rid: 1977933986848309438
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_IndexProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309449
+    - rid: 1977933986848309439
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_MiddleProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_MiddleProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309450
+    - rid: 1977933986848309440
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_PinkyProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_PinkyProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309451
+    - rid: 1977933986848309441
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_RingProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_RingProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309452
+    - rid: 1977933986848309442
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_ThumbProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_ThumbProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309453
+    - rid: 1977933986848309443
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_IndexProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309454
+    - rid: 1977933986848309444
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_MiddleProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_MiddleProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309455
+    - rid: 1977933986848309445
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_PinkyProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_PinkyProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309456
+    - rid: 1977933986848309446
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_RingProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_RingProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309457
+    - rid: 1977933986848309447
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_ThumbProximal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_ThumbProximal
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309458
+    - rid: 1977933986848309448
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: weapon
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/weapon
+        enable: 1
+        depth: 10
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309459
+    - rid: 1977933986848309449
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_IndexIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexProximal/Left_IndexIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309460
+    - rid: 1977933986848309450
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_MiddleIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_MiddleProximal/Left_MiddleIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309461
+    - rid: 1977933986848309451
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_PinkyIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_PinkyProximal/Left_PinkyIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309462
+    - rid: 1977933986848309452
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_RingIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_RingProximal/Left_RingIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309463
+    - rid: 1977933986848309453
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_ThumbIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_ThumbProximal/Left_ThumbIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309464
+    - rid: 1977933986848309454
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_IndexIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexProximal/Right_IndexIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309465
+    - rid: 1977933986848309455
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_MiddleIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_MiddleProximal/Right_MiddleIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309466
+    - rid: 1977933986848309456
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_PinkyIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_PinkyProximal/Right_PinkyIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309467
+    - rid: 1977933986848309457
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_RingIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_RingProximal/Right_RingIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309468
+    - rid: 1977933986848309458
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_ThumbIntermediate
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_ThumbProximal/Right_ThumbIntermediate
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309469
+    - rid: 1977933986848309459
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: bl_grip_low
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/weapon/bl_grip_low
+        enable: 1
+        depth: 11
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309460
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_IndexDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexProximal/Left_IndexIntermediate/Left_IndexDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309470
+    - rid: 1977933986848309461
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_MiddleDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_MiddleProximal/Left_MiddleIntermediate/Left_MiddleDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309471
+    - rid: 1977933986848309462
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_PinkyDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_PinkyProximal/Left_PinkyIntermediate/Left_PinkyDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309472
+    - rid: 1977933986848309463
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_RingDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_RingProximal/Left_RingIntermediate/Left_RingDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309473
+    - rid: 1977933986848309464
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_ThumbDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_ThumbProximal/Left_ThumbIntermediate/Left_ThumbDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309474
+    - rid: 1977933986848309465
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_IndexDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexProximal/Right_IndexIntermediate/Right_IndexDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309475
+    - rid: 1977933986848309466
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_MiddleDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_MiddleProximal/Right_MiddleIntermediate/Right_MiddleDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309476
+    - rid: 1977933986848309467
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_PinkyDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_PinkyProximal/Right_PinkyIntermediate/Right_PinkyDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309477
+    - rid: 1977933986848309468
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_RingDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_RingProximal/Right_RingIntermediate/Right_RingDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309478
+    - rid: 1977933986848309469
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_ThumbDistal
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_ThumbProximal/Right_ThumbIntermediate/Right_ThumbDistal
+        enable: 1
+        depth: 12
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children:
+        - rid: 1977933986848309479
+    - rid: 1977933986848309470
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_IndexDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexProximal/Left_IndexIntermediate/Left_IndexDistal/Left_IndexDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309471
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_MiddleDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_MiddleProximal/Left_MiddleIntermediate/Left_MiddleDistal/Left_MiddleDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309472
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_PinkyDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_PinkyProximal/Left_PinkyIntermediate/Left_PinkyDistal/Left_PinkyDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309473
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_RingDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_RingProximal/Left_RingIntermediate/Left_RingDistal/Left_RingDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309474
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Left_ThumbDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_ThumbProximal/Left_ThumbIntermediate/Left_ThumbDistal/Left_ThumbDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309475
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_IndexDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexProximal/Right_IndexIntermediate/Right_IndexDistal/Right_IndexDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309476
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_MiddleDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_MiddleProximal/Right_MiddleIntermediate/Right_MiddleDistal/Right_MiddleDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309477
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_PinkyDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_PinkyProximal/Right_PinkyIntermediate/Right_PinkyDistal/Right_PinkyDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309478
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_RingDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_RingProximal/Right_RingIntermediate/Right_RingDistal/Right_RingDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
+    - rid: 1977933986848309479
+      type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
+      data:
+        boneName: Right_ThumbDistalEnd
+        bonePath: Skeleton/Hips/Spine/Chest/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_ThumbProximal/Right_ThumbIntermediate/Right_ThumbDistal/Right_ThumbDistalEnd
+        enable: 1
+        depth: 13
+        Weights:
+          SingleElementLock: 0
+          values:
+          - 1
+          toggles: 01
+        children: []
