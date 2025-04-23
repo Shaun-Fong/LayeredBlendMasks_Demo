@@ -14,4 +14,10 @@ Layered Blend Mask Version: v1.2.3+
 
 [Discord](https://discord.gg/dUVDKhzUQK)
 
+## Install
+
 Make sure to install the `Layered Blend Mask` through `Package Manager`
+
+## WeaponController.cs
+
+[WeaponController](https://github.com/Shaun-Fong/LayeredBlendMasks_Demo/blob/main/Assets/StarterAssets/ThirdPersonController/Scripts/WeaponController.cs) script show how to use `Layered Blend Mask`, and the remaining scripts are almost identical to the original scripts.
