@@ -31,3 +31,7 @@ You can change weights at runtime, and it will be restore when blend layer chang
 ## SampleWeaponController.cs
 
 [SampleWeaponController](Assets/StarterAssets/ThirdPersonController/Scripts/SampleWeaponController.cs) script show how to use `Layered Blend Mask`, and the remaining scripts are almost identical to the original scripts.
+
+## Blender Assets
+
+The Extra weapon animation was made by Blender, and using `auto rig` plugin. You can change things if you want.
