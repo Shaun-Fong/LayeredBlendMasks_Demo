@@ -71,7 +71,7 @@ MonoBehaviour:
     - rid: 1977933986848309401
       type: {class: SkeletonBone, ns: LayeredBlendMasks.Runtime, asm: LayeredBlendMasks.Runtime}
       data:
-        boneName: AK
+        boneName: Armature
         bonePath: 
         enable: 1
         depth: 0

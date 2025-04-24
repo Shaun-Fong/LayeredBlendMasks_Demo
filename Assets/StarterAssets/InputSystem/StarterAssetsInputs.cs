@@ -22,38 +22,78 @@ namespace StarterAssets
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
 
+        private void Start()
+        {
+            SetCursorState(cursorLocked);
+        }
+
 #if ENABLE_INPUT_SYSTEM
-		public void OnMove(InputValue value)
+        public void OnMove(InputValue value)
 		{
+			if(cursorLocked == false)
+			{
+				return;
+			}
 			MoveInput(value.Get<Vector2>());
 		}
 
 		public void OnLook(InputValue value)
-		{
-			if(cursorInputForLook)
+        {
+            if (cursorLocked == false)
+            {
+                return;
+            }
+            if (cursorInputForLook)
 			{
 				LookInput(value.Get<Vector2>());
 			}
 		}
 
 		public void OnJump(InputValue value)
-		{
-			JumpInput(value.isPressed);
+        {
+            if (cursorLocked == false)
+            {
+                return;
+            }
+            JumpInput(value.isPressed);
         }
 
         public void OnSprint(InputValue value)
         {
+            if (cursorLocked == false)
+            {
+                return;
+            }
             SprintInput(value.isPressed);
         }
 
         public void OnWeapon(InputValue value)
         {
+            if (cursorLocked == false)
+            {
+                return;
+            }
             WeaponInput(value.isPressed);
         }
+
         public void OnAim(InputValue value)
         {
+            if (cursorLocked == false)
+            {
+                return;
+            }
             AimInput(value.isPressed);
         }
+
+		public void OnEsc(InputValue value)
+		{
+			if (value.isPressed)
+			{
+				cursorLocked = !cursorLocked;
+
+                SetCursorState(cursorLocked);
+            }
+		}
 #endif
 
 
@@ -86,10 +126,6 @@ namespace StarterAssets
         {
             aim = newAimState;
         }
-        private void OnApplicationFocus(bool hasFocus)
-		{
-			SetCursorState(cursorLocked);
-		}
 
 		private void SetCursorState(bool newState)
 		{

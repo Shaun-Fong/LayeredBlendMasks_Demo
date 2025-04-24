@@ -4,7 +4,7 @@
 
 Unity Version: 6000.0.37f
 
-Layered Blend Mask Version: v1.2.3+
+Layered Blend Mask Version: v1.2.5+
  
 [Asset Store](https://u3d.as/3vzq)
  
