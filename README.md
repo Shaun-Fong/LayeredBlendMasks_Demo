@@ -18,6 +18,12 @@ Layered Blend Mask Version: v1.2.5+
 
 Make sure to install the `Layered Blend Mask` through `Package Manager`
 
+## Runtime Weight Editing
+
+![demo](https://github.com/user-attachments/assets/ec2f664b-88e5-431e-bbd3-8772332d6476)
+
+You can change weights at runtime, and it will be restore when blend layer changed.
+
 ## WeaponController.cs
 
 [WeaponController](https://github.com/Shaun-Fong/LayeredBlendMasks_Demo/blob/main/Assets/StarterAssets/ThirdPersonController/Scripts/WeaponController.cs) script show how to use `Layered Blend Mask`, and the remaining scripts are almost identical to the original scripts.
