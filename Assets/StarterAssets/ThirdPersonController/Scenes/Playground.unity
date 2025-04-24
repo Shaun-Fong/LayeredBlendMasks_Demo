@@ -1619,8 +1619,10 @@ MonoBehaviour:
 
     Press ''1'' to Draw/Hide weapon.
 
-    Hold ''Right Click''
-    to aim.'
+    Press ''R'' unlock
+    cursor.
+
+    Hold ''Right Click'' to aim.'
 --- !u!222 &644101813
 CanvasRenderer:
   m_ObjectHideFlags: 0
