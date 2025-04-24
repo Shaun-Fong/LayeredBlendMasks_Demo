@@ -16,7 +16,11 @@ Layered Blend Mask Version: v1.2.5+
 
 ## Install
 
-Make sure to install the `Layered Blend Mask` through `Package Manager`
+1. Download project from [here](https://github.com/Shaun-Fong/LayeredBlendMasks_Demo/archive/refs/heads/main.zip) or Download `Source code zip` from [Releases](https://github.com/Shaun-Fong/LayeredBlendMasks_Demo/releases)
+
+2. Unzip, open project with Unity6
+
+3. Install the `Layered Blend Mask` through `Package Manager`
 
 ## Runtime Weight Editing
 
