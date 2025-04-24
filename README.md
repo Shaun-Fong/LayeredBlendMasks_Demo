@@ -28,6 +28,6 @@ Layered Blend Mask Version: v1.2.5+
 
 You can change weights at runtime, and it will be restore when blend layer changed.
 
-## WeaponController.cs
+## SampleWeaponController.cs
 
-[WeaponController](https://github.com/Shaun-Fong/LayeredBlendMasks_Demo/blob/main/Assets/StarterAssets/ThirdPersonController/Scripts/WeaponController.cs) script show how to use `Layered Blend Mask`, and the remaining scripts are almost identical to the original scripts.
+[SampleWeaponController](Assets/StarterAssets/ThirdPersonController/Scripts/SampleWeaponController.cs) script show how to use `Layered Blend Mask`, and the remaining scripts are almost identical to the original scripts.
